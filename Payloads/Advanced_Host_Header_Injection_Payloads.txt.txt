@@ -1,0 +1,55 @@
+# Advanced Host Header Injection Payloads
+
+## Payload 1
+
+X-Forwarded-Host: attacker.com
+
+Purpose:
+Test whether the backend application trusts forwarded host headers.
+
+Observed Behavior:
+Application accepted the request and processed password reset functionality successfully.
+
+Result:
+HTTP/2 200 OK
+
+## Payload 2
+
+X-Forwarded-Host: exploit-0a22008503e4b5b882d2a03601bc0079.exploit-server.net
+
+Purpose:
+Simulate attacker-controlled forwarded host injection using exploit server domain.
+
+Observed Behavior:
+Application processed the request successfully using attacker-controlled forwarded host value.
+
+Result:
+HTTP/2 200 OK
+
+## Payload 3
+
+Host: original-lab-domain
+Host: attacker.com
+
+Purpose:
+Test duplicate Host header handling and parsing inconsistencies.
+
+Observed Behavior:
+Application/server response behavior became abnormal during duplicate Host header testing.
+
+Potential Impact:
+
+* Reverse proxy confusion
+* Host parsing ambiguity
+* Cache poisoning possibilities
+* Request routing inconsistencies
+
+## Baseline Valid Header
+
+Host: 0ac7009903dcb58e8284a1b6007700b8.web-security-academy.net
+
+Purpose:
+Normal application behavior comparison.
+
+Observed Behavior:
+Password reset functionality operated normally.

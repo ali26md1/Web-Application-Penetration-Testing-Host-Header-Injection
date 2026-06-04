@@ -1,0 +1,38 @@
+# Final Presentation Notes
+
+Introduction:
+
+* Explain Host Header Injection concept
+* Explain importance of secure Host validation
+
+Demonstration:
+
+* Show BurpSuite Proxy interception
+* Show password reset request capture
+* Demonstrate Host header modification
+* Demonstrate X-Forwarded-Host testing
+* Demonstrate duplicate Host testing
+
+Analysis:
+
+* Explain observed behaviors
+* Explain abnormal response handling
+* Explain security implications
+
+Security Risks:
+
+* Password reset poisoning
+* Credential theft
+* Reverse proxy confusion
+* Cache poisoning
+
+Mitigation:
+
+* Strict Host validation
+* Reverse proxy hardening
+* Header sanitization
+
+Conclusion:
+
+* Summarize findings
+* Explain importance of security testing

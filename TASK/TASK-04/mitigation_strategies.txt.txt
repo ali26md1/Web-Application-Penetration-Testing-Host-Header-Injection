@@ -1,0 +1,37 @@
+# Mitigation Strategies for Host Header Injection
+
+1. Validate Host Headers Strictly
+
+* Accept only trusted domains
+* Reject unknown Host values
+* Enforce whitelist validation
+
+2. Ignore Untrusted Forwarded Headers
+
+* Do not trust user-controlled X-Forwarded-* headers
+* Sanitize reverse proxy headers properly
+
+3. Reject Duplicate Host Headers
+
+* Configure web servers to deny requests containing multiple Host headers
+
+4. Use Canonical Server Configuration
+
+* Configure applications with fixed trusted domains
+* Avoid dynamically generating URLs from request headers
+
+5. Implement Reverse Proxy Security Controls
+
+* Normalize incoming headers
+* Drop ambiguous or malformed requests
+
+6. Monitor and Log Suspicious Requests
+
+* Detect repeated Host header manipulation attempts
+* Alert on unusual forwarded header activity
+
+7. Perform Regular Security Testing
+
+* Conduct penetration testing
+* Validate reverse proxy behavior
+* Review request routing logic

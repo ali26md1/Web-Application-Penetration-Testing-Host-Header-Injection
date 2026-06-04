@@ -1,0 +1,13 @@
+# Presentation Key Points
+
+1. Introduction to Host Header Injection
+2. BurpSuite setup and proxy interception
+3. Capturing HTTP requests
+4. Password reset poisoning concept
+5. Host header manipulation using Repeater
+6. X-Forwarded-Host testing
+7. Duplicate Host header testing
+8. Response analysis and observations
+9. Security risks and impacts
+10. Mitigation strategies
+11. Final conclusions

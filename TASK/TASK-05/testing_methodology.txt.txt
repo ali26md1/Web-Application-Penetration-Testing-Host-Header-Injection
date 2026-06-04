@@ -1,0 +1,35 @@
+# Testing Methodology
+
+1. BurpSuite Configuration
+
+* Installed BurpSuite Community Edition
+* Configured Burp proxy listener
+* Configured browser proxy settings
+
+2. Traffic Interception
+
+* Captured HTTP requests using Burp Proxy
+* Analyzed password reset functionality
+
+3. Request Manipulation
+
+* Sent captured requests to Burp Repeater
+* Modified Host headers manually
+* Added X-Forwarded-Host headers
+* Tested duplicate Host headers
+
+4. Exploitation Simulation
+
+* Used PortSwigger exploit server domain
+* Simulated attacker-controlled password reset poisoning scenarios
+
+5. Response Analysis
+
+* Compared application behavior across multiple payloads
+* Observed server responses and request processing behavior
+
+6. Documentation
+
+* Collected screenshots
+* Maintained payload repository
+* Recorded testing observations and mitigation strategies

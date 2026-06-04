@@ -1,0 +1,75 @@
+# Final Report Structure
+
+1. Title Page
+
+* Project Title
+* Student Name
+* Submission Date
+
+2. Introduction
+
+* Overview of Host Header Injection
+* Purpose of testing
+* Objectives of the assessment
+
+3. Tools Used
+
+* BurpSuite Community Edition
+* PortSwigger Web Security Academy
+* Burp Repeater
+* Proxy HTTP History
+
+4. Testing Methodology
+
+* Traffic interception
+* Request analysis
+* Host header manipulation
+* Payload testing
+* Response analysis
+
+5. Vulnerability Findings
+
+* Host Header Injection
+* Password Reset Poisoning
+* X-Forwarded-Host trust issues
+* Duplicate Host header ambiguity
+
+6. Payloads Used
+
+* attacker.com
+* exploit-server payloads
+* forwarded host payloads
+* duplicate Host payloads
+
+7. Observations & Results
+
+* HTTP/2 200 OK responses
+* abnormal request behavior
+* response inconsistencies
+
+8. Security Risks
+
+* Credential theft
+* Phishing
+* Cache poisoning
+* Reverse proxy confusion
+* Authentication manipulation
+
+9. Mitigation Strategies
+
+* Host validation
+* Header sanitization
+* Reverse proxy hardening
+* Duplicate header rejection
+
+10. Conclusion
+
+* Summary of findings
+* Importance of secure Host validation
+* Security testing benefits
+
+11. References
+
+* PortSwigger documentation
+* BurpSuite documentation
+* OWASP references

@@ -1,0 +1,22 @@
+## Final Validation Payload
+
+Host: attacker.com
+
+Purpose:
+Validate whether manipulated Host values still affect application behavior.
+
+Observed Behavior:
+Request became unresponsive/waiting during processing.
+
+## Baseline Validation Payload
+
+Host: 0ad100fc0490777a82fc5b7600a30096.web-security-academy.net
+
+Purpose:
+Compare normal application behavior using valid Host header.
+
+Observed Behavior:
+Application processed password reset request successfully.
+
+Result:
+HTTP/2 200 OK

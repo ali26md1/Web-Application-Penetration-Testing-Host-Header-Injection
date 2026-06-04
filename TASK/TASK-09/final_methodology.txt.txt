@@ -1,0 +1,44 @@
+# Final Testing Methodology
+
+1. Environment Setup
+
+* Installed BurpSuite Community Edition
+* Configured proxy listener
+* Configured browser proxy settings for traffic interception
+
+2. Traffic Interception
+
+* Captured HTTP requests and responses using BurpSuite Proxy
+* Identified password reset functionality for testing
+
+3. Request Analysis
+
+* Analyzed request headers, cookies, parameters, and server responses
+* Reviewed Host-related header handling
+
+4. Host Header Manipulation
+
+* Modified Host headers using BurpSuite Repeater
+* Tested attacker-controlled Host values
+* Performed exploit server header injection testing
+
+5. Alternate Header Testing
+
+* Tested X-Forwarded-Host header behavior
+* Evaluated forwarded header trust handling
+
+6. Duplicate Header Testing
+
+* Tested duplicate Host header scenarios
+* Observed abnormal response behavior and parsing inconsistencies
+
+7. Response Validation
+
+* Compared baseline valid Host responses against manipulated Host responses
+* Recorded HTTP response behavior and application processing patterns
+
+8. Documentation
+
+* Captured screenshots
+* Recorded payloads
+* Documented observations, risks, and mitigation strategies

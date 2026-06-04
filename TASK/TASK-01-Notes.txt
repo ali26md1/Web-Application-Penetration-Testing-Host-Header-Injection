@@ -1,0 +1,25 @@
+Objective:
+Configure BurpSuite and prepare environment for Host Header Injection testing.
+
+Tool Used:
+Burp Suite Community Edition
+
+Browser Used:
+Burp Chromium Browser
+
+Proxy Configuration:
+127.0.0.1:8080
+
+Testing Environment:
+PortSwigger Web Security Academy
+
+Activities Performed:
+- Installed and configured BurpSuite
+- Verified proxy listener
+- Intercepted HTTPS traffic
+- Captured HTTP requests
+- Analyzed Host header
+- Opened Host Header Injection labs
+
+Observations:
+Successfully intercepted HTTP requests and identified the Host header within captured packets. Learned about Host Header Injection attack vectors including password reset poisoning and cache poisoning.

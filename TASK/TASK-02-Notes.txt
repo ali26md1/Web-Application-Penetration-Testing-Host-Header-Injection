@@ -1,0 +1,35 @@
+Activity:
+Performed Host Header Injection testing using BurpSuite Repeater.
+
+Target Endpoint:
+POST /forgot-password
+
+Payload 1:
+Host: attacker.com
+
+Observation:
+Application processed the password reset request successfully after Host header manipulation.
+
+Payload 2:
+Host: exploit-0a5e009403844d5b8081202f01b6005a.exploit-server.net
+
+Observation:
+Server continued accepting requests using attacker-controlled Host header values.
+
+Potential Impact:
+
+* Password reset poisoning
+* Malicious reset link generation
+* Phishing attacks
+* Credential theft
+* Account takeover possibilities
+
+Risk Level:
+High
+
+Tools Used:
+
+* BurpSuite Proxy
+* HTTP History
+* Repeater
+* Exploit Server

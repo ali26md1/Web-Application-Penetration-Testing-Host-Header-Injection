@@ -1,0 +1,49 @@
+Objective:
+Perform advanced Host Header Injection testing using alternate forwarding headers and duplicate Host header manipulation.
+
+Tests Performed:
+
+1. X-Forwarded-Host Header Test
+   Payload:
+   X-Forwarded-Host: attacker.com
+
+Observation:
+Application accepted the additional forwarded host header and continued processing password reset requests successfully.
+
+Result:
+HTTP/2 200 OK
+
+2. Exploit Server Forwarded Header Test
+   Payload:
+   X-Forwarded-Host: exploit-0a22008503e4b5b882d2a03601bc0079.exploit-server.net
+
+Observation:
+Application processed requests using attacker-controlled forwarded host values.
+
+Result:
+HTTP/2 200 OK
+
+3. Duplicate Host Header Test
+   Payload:
+   Host: original-lab-domain
+   Host: attacker.com
+
+Observation:
+Application/server behavior became inconsistent during duplicate Host header testing. Response handling appeared abnormal/blank, suggesting possible parsing ambiguity.
+
+Potential Risks:
+
+* Host Header Injection
+* Password reset poisoning
+* Reverse proxy confusion
+* Cache poisoning
+* Request routing inconsistencies
+
+Severity Assessment:
+Potentially High
+
+Tools Used:
+
+* BurpSuite Repeater
+* Proxy HTTP History
+* Exploit Server

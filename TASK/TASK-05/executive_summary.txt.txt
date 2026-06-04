@@ -1,0 +1,26 @@
+# Executive Summary
+
+This project involved performing Host Header Injection testing using BurpSuite on intentionally vulnerable web application environments provided by PortSwigger Web Security Academy.
+
+Testing activities included:
+
+* HTTP packet interception
+* Host header manipulation
+* Password reset poisoning analysis
+* X-Forwarded-Host testing
+* Duplicate Host header testing
+* Exploit feasibility validation
+
+The application accepted manipulated Host-related headers during multiple test scenarios and continued processing password reset functionality successfully.
+
+Observed behaviors suggested possible risks involving:
+
+* Password reset poisoning
+* Credential theft
+* Reverse proxy confusion
+* Cache poisoning
+* Authentication flow manipulation
+
+BurpSuite Proxy and Repeater modules were used extensively to capture, modify, and replay HTTP requests for security analysis purposes.
+
+The project also documented mitigation strategies, payload structures, risk assessments, and testing evidence for final reporting.

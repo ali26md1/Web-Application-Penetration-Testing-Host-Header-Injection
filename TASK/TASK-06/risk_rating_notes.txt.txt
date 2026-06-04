@@ -1,0 +1,28 @@
+# Risk Rating Assessment
+
+Vulnerability:
+Host Header Injection
+
+Severity:
+High
+
+Reasoning:
+The application accepted manipulated Host-related headers and continued processing sensitive password reset functionality.
+
+Potential Impact:
+
+* Password reset poisoning
+* Credential theft
+* Phishing attacks
+* Cache poisoning
+* Reverse proxy confusion
+* Authentication manipulation
+
+Likelihood:
+Moderate to High
+
+Business Impact:
+High
+
+Justification:
+Improper Host validation can allow attackers to influence password reset functionality and manipulate application-generated URLs.

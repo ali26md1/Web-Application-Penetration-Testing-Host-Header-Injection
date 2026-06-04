@@ -1,0 +1,32 @@
+# Screenshot Mapping
+
+## Day 1
+
+* BurpSuite setup
+* Proxy configuration
+* Browser interception
+* HTTP History capture
+
+## Day 2
+
+* Password reset request capture
+* Repeater setup
+* Modified Host header testing
+* Exploit server testing
+
+## Day 3
+
+* X-Forwarded-Host testing
+* Exploit forwarded host testing
+* Duplicate Host header testing
+
+## Day 4
+
+* Notes organization
+* Mitigation documentation
+* Evidence organization
+
+## Day 5
+
+* Final validation testing
+* Baseline validation comparison

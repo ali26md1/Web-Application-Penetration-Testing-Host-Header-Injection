@@ -1,0 +1,19 @@
+# Refined Testing Observations
+
+Observation 1:
+Manipulated Host headers were accepted during password reset functionality testing.
+
+Observation 2:
+Application continued processing requests after Host header modification and returned HTTP/2 200 OK responses in several test scenarios.
+
+Observation 3:
+X-Forwarded-Host headers influenced request processing behavior and were not strictly validated.
+
+Observation 4:
+Duplicate Host header testing resulted in abnormal or inconsistent response behavior.
+
+Observation 5:
+Baseline valid Host testing produced normal successful responses, while manipulated Host values caused inconsistent behavior patterns.
+
+Security Implication:
+The observed behaviors indicate potential weaknesses in Host header validation and reverse proxy request handling.
