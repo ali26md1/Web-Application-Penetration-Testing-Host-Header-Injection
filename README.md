@@ -27,3 +27,4 @@ Host-Header-Injection-Assessment/
 ## Summary
 
 This project demonstrates how Host Header Injection can impact password reset and forwarding logic, and includes recommended mitigation strategies for secure header handling.
+
