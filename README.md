@@ -1,7 +1,20 @@
 # Host Header Injection Assessment
 
-This repository contains a professional, structured assessment of Host Header Injection testing.
-The content includes reports, payload collections, attack scenario documentation, findings, and curated screenshots.
+This repository contains the results of a Host Header Injection review. It is organized to show the evidence, payloads, attack workflow, and recommended fixes in a clear, professional format.
+
+## What’s included
+
+- `reports/`: assessment report and presentation slides
+- `screenshots/`: curated evidence from the test cases
+- `payloads/`: host header payloads used during testing
+- `attack-scenarios/`: step-by-step documentation for each scenario
+- `findings/`: remediation advice and risk summary
+
+## Why this matters
+
+Host headers are used by servers and proxies to identify the requested domain. When applications or middleware accept untrusted host values, it creates opportunities for password reset poisoning, proxy confusion, and header parsing bypasses.
+
+This assessment covers how the target behaves when host-related headers are manipulated and where controls need to be tightened.
 
 ## Repository structure
 
@@ -15,16 +28,4 @@ Host-Header-Injection-Assessment/
 ├── attack-scenarios/
 └── findings/
 ```
-
-## Contents
-
-- `reports/`: assessment report and presentation
-- `screenshots/`: key evidence images for the attack scenarios
-- `payloads/`: host header payload collection
-- `attack-scenarios/`: step-by-step scenario documentation
-- `findings/`: remediation recommendations and summary
-
-## Summary
-
-This project demonstrates how Host Header Injection can impact password reset and forwarding logic, and includes recommended mitigation strategies for secure header handling.
 

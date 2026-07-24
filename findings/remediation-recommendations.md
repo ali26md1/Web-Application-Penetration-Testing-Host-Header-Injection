@@ -1,16 +1,16 @@
 # Remediation Recommendations
 
 ## Summary
-This assessment highlights the need for stronger host header validation, improved header parsing logic, and tighter control over forwarded headers.
+This assessment highlights the need for stronger host header validation, more consistent header parsing, and tighter control over forwarded header values.
 
-## Recommended Actions
+## Recommended actions
 
-- Enforce strict `Host` header validation against the expected application host.
-- Reject requests containing duplicate `Host` headers.
-- Sanitize and validate `X-Forwarded-*` headers before trusting their values.
-- Configure reverse proxies and load balancers to normalize and validate incoming headers.
-- Use application-level checks to prevent host-based redirection or password reset poisoning.
-- Log and monitor unexpected host header values for suspicious activity.
+- Enforce strict `Host` header validation and reject unexpected hosts.
+- Reject requests that contain duplicate `Host` headers.
+- Sanitize and validate `X-Forwarded-*` headers before trusting them.
+- Configure reverse proxies and load balancers to normalize and validate incoming host data.
+- Add application-level checks to prevent host-based password reset poisoning and redirect abuse.
+- Log and monitor suspicious host header values.
 
 ## Benefits
-These changes reduce the risk of password reset poisoning, cache poisoning, authentication bypass, and host header injection attacks.
+These changes reduce the risk of password reset poisoning, cache poisoning, authentication bypass, and other host header injection risks.
