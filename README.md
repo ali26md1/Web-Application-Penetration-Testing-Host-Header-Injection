@@ -16,6 +16,26 @@ Host headers are used by servers and proxies to identify the requested domain. W
 
 This assessment covers how the target behaves when host-related headers are manipulated and where controls need to be tightened.
 
+## Skills Demonstrated
+
+- Web Application Security Testing
+- Burp Suite
+- HTTP Request Analysis
+- Host Header Injection Testing
+- Vulnerability Assessment
+- Security Reporting
+- Remediation Planning
+- OWASP Testing Methodology
+
+## Key Findings
+
+| Finding | Risk |
+|----------|------|
+| Host Header Manipulation | Medium |
+| Password Reset Poisoning | High |
+| X-Forwarded-Host Abuse | Medium |
+| Header Validation Weakness | Medium |
+
 ## Repository structure
 
 ```
