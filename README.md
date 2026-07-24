@@ -18,23 +18,27 @@ This assessment covers how the target behaves when host-related headers are mani
 
 ## Skills Demonstrated
 
-- Web Application Security Testing
-- Burp Suite
-- HTTP Request Analysis
-- Host Header Injection Testing
-- Vulnerability Assessment
-- Security Reporting
-- Remediation Planning
-- OWASP Testing Methodology
+| Category | Skills |
+|---|---|
+| Testing | Web Application Security Testing · Host Header Injection Testing · Vulnerability Assessment |
+| Analysis | Burp Suite · Browser Developer Tools · HTTP Request Analysis |
+| Process & Reporting | Security Reporting · Remediation Planning · OWASP Testing Methodology |
 
 ## Key Findings
 
 | Finding | Risk |
-|----------|------|
+|---|---|
 | Host Header Manipulation | Medium |
 | Password Reset Poisoning | High |
 | X-Forwarded-Host Abuse | Medium |
 | Header Validation Weakness | Medium |
+
+## Tools Used
+
+- Burp Suite
+- Browser Developer Tools
+- HTTP Header Manipulation (manual)
+- Manual Security Testing
 
 ## Repository structure
 
